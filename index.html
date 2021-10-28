@@ -6,6 +6,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script type="text/javascript" src="plotlyjs-bundle.js"></script>    
+        <script type="text/javascript" src="figure.js"></script>
 		
 		<meta http-equiv="content-script-type" content="text/javascript">
 		<meta http-equiv="content-style-type" content="text/css">
@@ -220,10 +222,38 @@ We had an SOS call where the riders were churning out of the system at an alarmi
 <b>Breakfast Category Growth (Feb'19 - Jun'19)</b><br>
 Took initiative to expand operational hours (7AM - 11AM) by featuring breakfast as a category for the emerging cities. Breakfast slot was the top growing mealtime then. Scaled to 25x orders in 2 months, with a 40% increase in the OTR (order through rate). Achieved this though increasing merchant supply and curating great feed on the consumer app.<br>
 Order trajectory:
-<div>
-    <a href="https://plotly.com/~paarth_pareek/3/?share_key=SOk8zt68EorUwOWlReYQ0L" target="_blank" title="Plot 3" style="display: block; text-align: center;"><img src="https://plotly.com/~paarth_pareek/3.png?share_key=SOk8zt68EorUwOWlReYQ0L" alt="Plot 3" style="max-width: 100%;width: 600px;"  width="600" onerror="this.onerror=null;this.src='https://plotly.com/404.png';" /></a>
-    <script data-plotly="paarth_pareek:3" sharekey-plotly="SOk8zt68EorUwOWlReYQ0L" src="https://plotly.com/embed.js" async></script>
-</div>
+<div id="968a0102-114b-4594-b9f3-9ed65fddd00f" style="width: 100%; height: 100%;" class="plotly-graph-div"></div>
+        <script type="text/javascript">
+            (function(){
+                window.PLOTLYENV={'BASE_URL': 'https://plotly.com'};
+
+                var gd = document.getElementById('968a0102-114b-4594-b9f3-9ed65fddd00f')
+                var resizeDebounce = null;
+
+                function resizePlot() {
+                    var bb = gd.getBoundingClientRect();
+                    Plotly.relayout(gd, {
+                        width: bb.width,
+                        height: bb.height
+                    });
+                }
+
+                
+                window.addEventListener('resize', function() {
+                    if (resizeDebounce) {
+                        window.clearTimeout(resizeDebounce);
+                    }
+                    resizeDebounce = window.setTimeout(resizePlot, 100);
+                });
+                Plotly.plot(gd,  {
+                    data: figure.data,
+                    layout: figure.layout,
+                    frames: figure.frames,
+                    config: {"showLink": true, "linkText": "Export to plotly.com", "mapboxAccessToken": "pk.eyJ1IjoiY2hyaWRkeXAiLCJhIjoiY2lxMnVvdm5iMDA4dnhsbTQ5aHJzcGs0MyJ9.X9o_rzNLNesDxdra4neC_A"}
+                });
+                
+           }());
+        </script>
 
 
 OTR trajectory with app opens:
