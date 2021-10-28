@@ -100,11 +100,11 @@ hr { margin: 40px 0px; border-color: #727878; opacity: 0.2; filter:alpha(opacity
 #experiences .experience .experience-details * { color: #22A39F; }
 #experiences .experience .experience-details .seperator { color: #BCBCBC; }
 
-#abilities { min-height: 30px; padding: 0px 0px; }
-#abilities :hover { background: #F2F2F2; }
-#abilities .ability-title { display: inline-block; width: 60%; }
-#abilities .ability-score { float: right; }
-#abilities .ability-score .glyphicon { 
+#abilities ul > li { min-height: 30px; padding: 3px 0px; }
+#abilities ul > li:hover { background: #F2F2F2; }
+#abilities ul > li .ability-title { display: inline-block; width: 60%; }
+#abilities ul > li .ability-score { float: right; }
+#abilities ul > li .ability-score .glyphicon { 
 	color: #DFE0E0; 
 	font-size: 14px; 
 	 
