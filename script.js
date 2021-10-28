@@ -47,7 +47,7 @@ function applyClickEvent()
 {
 	$('a[href*="#"]').on('click', function(e)
 	{
-		//e.preventDefault();
+		e.preventDefault();
 		
 		if( $( $.attr(this, 'href') ).length > 0 )
 		{
